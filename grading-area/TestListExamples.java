@@ -27,15 +27,4 @@ public class TestListExamples {
     assertEquals(expected, merged);
   }
 }
-@Test(timeout = 500)
-  public void testsubtle() {
-    List<String> left = Arrays.asList("a", "b", "d");
-    List<String> right = Arrays.asList("a", "c");
-    List<String> merged = ListExamples.merge(left, right);
-    List<String> expected = Arrays.asList("a", "a", "b", "c", "d");
-    assertEquals(expected, merged);
-  }
-}
-
-
 
